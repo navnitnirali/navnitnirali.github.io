@@ -1,7 +1,6 @@
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-
-<!-- Mirrored from unlockdesizn.com/html/wedding/couple-heart/demo/index-singlepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Dec 2017 17:37:03 GMT -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,7 @@
 <!-- css file -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/Dark.css">
 <!-- Responsive stylesheet -->
 <link rel="stylesheet" href="css/responsive.css">
 <!-- Title -->
@@ -26,12 +26,14 @@
 </head>
 <body>
 <div class="wrapper">
-	<div class="preloader"></div>
+	<div class="preloader">
+		<div class="preloader_container"><div class="preloader_disabler btn btn-default btn-md">Disable Preloader</div></div>
+	</div>
 	<!-- Header Styles -->
 	<header class="header-nav transparent">
 		<div class="container">
 		    <!-- Start Navigation -->
-		    <nav class="navbar navbar-default navbar-fixed white no-background bootsnav navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+		    <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
 		        <div class="container">
 		            <!-- Start Header Navigation -->
 		            <div class="navbar-header">
@@ -47,14 +49,403 @@
 
 		            <!-- Collect the nav links, forms, and other content for toggling -->
 		            <div class="collapse navbar-collapse" id="navbar-menu">
-		                <ul class="nav navbar-nav navbar-center ulockd-pad9100 pull-right">
-							<li class="active scroll"><a href="#home">Home</a></li>
-							<li class="scroll"><a href="#about">About Us</a></li>
-							<li class="scroll"><a href="#story">Story</a></li>
-							<li class="scroll"><a href="#event">Event</a></li>
-							<li class="scroll"><a href="#ourmaid">Maids</a></li>
-							<li class="scroll"><a href="#blog">Blog</a></li>
-							<li class="scroll"><a href="#contact">Contact</a></li>
+		                <ul class="nav navbar-nav navbar-center ulockd-pad9100 pull-right" data-in="flipInX">
+		                    <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Home</a>
+		                        <ul class="dropdown-menu">
+									<li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Multipage Page</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="index-multipage.html">Multipage One</a></li>
+											<li><a href="index-multipage2.html">Multipage Two</a></li>
+				                        </ul>
+				                    </li>
+									<li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Single Page</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="index-singlepage.html">Single page One</a></li>
+											<li><a href="index-singlepage2.html">Single page Two</a></li>
+				                        </ul>
+				                    </li>
+									<li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Boxed Layout</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="index-multipage-boxed.html">Multipage Boxed One</a></li>
+											<li><a href="index-multipage2-boxed.html">Multipage Boxed Two</a></li>
+											<li><a href="index-singlepage-boxed.html">Singlepage Boxed One</a></li>
+											<li><a href="index-singlepage2-boxed.html">Singlepage Boxed Two</a></li>
+				                        </ul>
+				                    </li>
+									<li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">RTL Layout</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="index-multipage-rtl.html">Multipage RTL One</a></li>
+											<li><a href="index-multipage2-rtl.html">Multipage RTL Two</a></li>
+											<li><a href="index-singlepage-rtl.html">Singlepage RTL One</a></li>
+											<li><a href="index-singlepage2-rtl.html">Singlepage RTL Two</a></li>
+				                        </ul>
+				                    </li>
+									<li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dark Layout</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="index-multipage-dark.html">Multipage Dark One</a></li>
+											<li><a href="index-multipage2-dark.html">Multipage Dark Two</a></li>
+											<li><a href="index-singlepage-dark.html">Singlepage Dark One</a></li>
+											<li><a href="index-singlepage2-dark.html">Singlepage Dark Two</a></li>
+				                        </ul>
+				                    </li>
+									<li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Unlock BG <span class="badge ulockd-bgthm">New</span></a>
+				                        <ul class="dropdown-menu">
+											<li><a href="ulockd-background-parallax-home.html">BG Parallax</a></li>
+											<li><a href="ulockd-background-particles-home.html">BG Particles</a></li>
+											<li><a href="ulockd-background-particles-home2.html">BG Particles Two</a></li>
+											<li><a href="ulockd-background-video-home.html">BG Video</a></li>
+				                        </ul>
+				                    </li>
+		                        </ul>
+		                    </li>
+			                    <li class="dropdown">
+			                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+			                        <ul class="dropdown-menu">
+										<li class="dropdown">
+											<a href="blog-grid-one.html" class="dropdown-toggle" data-toggle="dropdown">Header Style <span class="badge ulockd-bgthm">New</span></a>
+	                                        <ul class="dropdown-menu">
+												<li><a href="ulockd-menu-standard-left.html">Navbar Left</a></li>
+												<li><a href="ulockd-menu-standard-center.html">Navbar Center</a></li>
+												<li><a href="ulockd-menu-standard.html">Navbar Left</a></li>
+												<li><a href="ulockd-menu-standard-right.html">Navbar Right</a></li>
+												<li><a href="ulockd-navbar-center-brand.html">Navbar Center Brand</a></li>
+												<li><a href="ulockd-menu-fullscreen.html">FullScreen Menu</a></li>
+												<li><a href="ulockd-menu-left-side.html">Left Side Menu</a></li>
+												<li><a href="ulockd-sticky-header.html">Sticky Header</a></li>
+												<li><a href="ulockd-navbar-transparent.html">Navbar Transparent</a></li>
+												<li><a href="ulockd-navbar-fixed.html">Navbar Fixed</a></li>
+												<li><a href="ulockd-bs-megamenu.html">Beautiful Megamenu</a></li>
+	                                        </ul>
+										</li>
+										<li class="dropdown">
+											<a href="blog-grid-one.html" class="dropdown-toggle" data-toggle="dropdown">Footer Style <span class="badge ulockd-bgthm">New</span></a>
+	                                        <ul class="dropdown-menu">
+												<li><a href="ulockd-footer-style1.html">Footer One</a></li>
+												<li><a href="ulockd-footer-style2.html">Footer Two</a></li>
+												<li><a href="ulockd-footer-style3.html">Footer Three</a></li>
+												<li><a href="ulockd-footer-style4.html">Footer Four</a></li>
+												<li><a href="ulockd-footer-style5.html">Footer Five</a></li>
+	                                        </ul>
+										</li>
+										<li class="dropdown">
+											<a href="blog-grid-one.html" class="dropdown-toggle" data-toggle="dropdown">RSVP Form <span class="badge ulockd-bgthm">New</span></a>
+	                                        <ul class="dropdown-menu">
+												<li><a href="ulockd-booking-form2-rsvp.html">Form RSVP</a></li>
+												<li><a href="ulockd-booking-form2-rsvp2.html">Form RSVP Two</a></li>
+	                                        </ul>
+										</li>
+			                        </ul>
+			                    </li>
+			                    <li class="dropdown">
+			                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+			                        <ul class="dropdown-menu">
+										<li><a href="page-about.html">About</a></li>
+										<li><a href="page-about2.html">About Two</a></li>
+										<li><a href="page-about-her.html">About Her</a></li>
+										<li><a href="page-about-him.html">About Him</a></li>
+			                        </ul>
+			                    </li>
+		                    <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Service</a>
+		                        <ul class="dropdown-menu">
+									<li><a href="page-service.html">Service</a></li>
+									<li><a href="page-service2.html">Service Two</a></li>
+									<li><a href="page-service-details.html">Service Details</a></li>
+		                        </ul>
+		                    </li>
+		                    <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Team</a>
+		                        <ul class="dropdown-menu">
+									<li><a href="page-team.html">Team One</a></li>
+									<li><a href="page-team2.html">Team Two</a></li>
+									<li><a href="page-team-details.html">Team Details</a></li>
+									<li><a href="page-team-registration.html">Join Us</a></li>
+		                        </ul>
+		                    </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                <ul class="dropdown-menu">
+									<li class="dropdown">
+										<a href="blog-grid-one.html" class="dropdown-toggle" data-toggle="dropdown">Blog Grid </a>
+                                        <ul class="dropdown-menu">
+											<li><a href="blog-grid-one.html">Blog Grid One </a></li>
+											<li><a href="blog-grid-two.html">Blog Grid Two </a></li>
+											<li><a href="blog-grid-three.html">Blog Grid Three </a></li>
+                                        </ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog Single </a>
+                                        <ul class="dropdown-menu">
+											<li><a href="blog-signle-left-sidebar.html">Sidebar left</a></li>
+											<li><a href="blog-signle-right-sidebar.html">Sidebar Right</a></li>
+											<li><a href="blog-signle-sidebar-less.html">Sidebar Less</a></li>
+                                        </ul>
+									</li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog Classic</a>
+                                        <ul class="dropdown-menu">
+											<li><a href="blog-left-sidebar.html">Sidebar left</a></li>
+											<li><a href="blog-right-sidebar.html">Sidebar Right</a></li>
+											<li><a href="blog-sidebar-less.html">Sidebar Less</a></li>
+                                        </ul>
+									</li>
+                                </ul>
+                            </li>
+		                    <li class="dropdown">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+		                        <ul class="dropdown-menu">
+									<li><a href="page-appointment.html">Appointment</a></li>
+				                    <li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Coming Soon</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="page-coming-soon.html">Coming Soon</a></li>
+											<li><a href="page-coming-soon2.html">Coming Soon Two</a></li>
+				                        </ul>
+				                    </li>
+				                    <li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="page-contact.html">Contact Us</a></li>
+											<li><a href="page-contact2.html">Contact Us Two</a></li>
+				                        </ul>
+				                    </li>
+									<li><a href="page-divider.html">Divider</a></li>
+									<li><a href="page-error.html">Error</a></li>
+									<li><a href="page-faq.html">Faq</a></li>
+				                    <li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Feature Service</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="page-feature-service.html">Feature Service</a></li>
+											<li><a href="page-feature-service2.html">Feature Service Two</a></li>
+											<li><a href="page-feature-service-details.html">Feature Service Details</a></li>
+				                        </ul>
+				                    </li>
+				                    <li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Feature</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="page-carrer.html">Carrer</a></li>
+											<li><a href="page-job-details.html">Carrer Details</a></li>
+				                        </ul>
+				                    </li>
+				                    <li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Google Calendar</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="page-fullcalendar.html">Monthly Event</a></li>
+											<li><a href="page-fullcalendar2.html">Weekly Event</a></li>
+				                        </ul>
+				                    </li>
+	                                <li class="dropdown">
+	                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+	                                    <ul class="dropdown-menu">
+											<li class="dropdown">
+												<a href="blog-grid-one.html" class="dropdown-toggle" data-toggle="dropdown">Fancybox </a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="page-gallery-fancybox.html">Fancybox</a></li>
+													<li><a href="page-gallery-fancybox-wide.html">Fancybox Wide</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 1 col </a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-1.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-1-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-1-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-1-wide-space.html">Wide Space</a></li>
+													<li><a href="portfolio-masonry-1-wide-space-title.html">Wide Space Title</a></li>
+													<li><a href="portfolio-masonry-1-wide-space-detail.html">Wide Space Details</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 2 col </a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-2.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-2-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-2-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-2-wide-space.html">Wide Space</a></li>
+													<li><a href="portfolio-masonry-2-wide-space-title.html">Wide Space Title</a></li>
+													<li><a href="portfolio-masonry-2-wide-space-detail.html">Wide Space Details</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 3 col </a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-3.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-3-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-3-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-3-wide-space.html">Wide Space</a></li>
+													<li><a href="portfolio-masonry-3-wide-space-title.html">Wide Space Title</a></li>
+													<li><a href="portfolio-masonry-3-wide-space-detail.html">Wide Space Details</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 4 col </a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-4.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-4-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-4-space-title.html">Space Title</a></li>
+													<li><a href="portfolio-masonry-4-space-details.html">Space Details</a></li>
+													<li><a href="portfolio-masonry-4-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-4-wide-space.html">Wide Space</a></li>
+													<li><a href="portfolio-masonry-isotop-4.html">Isotop Wide Less</a></li>
+													<li><a href="portfolio-masonry-isotop-4-wide.html">Isotop Wide</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 5 col</a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-5.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-5-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-5-space-title.html">Space Title</a></li>
+													<li><a href="portfolio-masonry-5-space-details.html">Space Details</a></li>
+													<li><a href="portfolio-masonry-5-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-5-wide-space.html">Wide Space</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 6 col</a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-6.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-6-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-6-space-title.html">Space Title</a></li>
+													<li><a href="portfolio-masonry-6-space-details.html">Space Details</a></li>
+													<li><a href="portfolio-masonry-6-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-6-wide-space.html">Wide Space</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 7 col</a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-7.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-7-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-7-space-title.html">Space Title</a></li>
+													<li><a href="portfolio-masonry-7-space-detail.html">Space Details</a></li>
+													<li><a href="portfolio-masonry-7-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-7-wide-space.html">Wide Space</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 8 col</a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-8.html">Space Less</a></li>
+													<li><a href="portfolio-masonry-8-space.html">Space</a></li>
+													<li><a href="portfolio-masonry-8-space-title.html">Space Title</a></li>
+													<li><a href="portfolio-masonry-8-space-detail.html">Space Details</a></li>
+													<li><a href="portfolio-masonry-8-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-8-wide-space.html">Wide Space</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 9 col</a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-9-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-9-wide-space.html">Wide Space</a></li>
+													<li><a href="portfolio-masonry-9-wide-space-title.html">Wide Space Title</a></li>
+													<li><a href="portfolio-masonry-9-wide-space-detail.html">Wide Space Detail</a></li>
+		                                        </ul>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Isotop 10 col</a>
+		                                        <ul class="dropdown-menu">
+													<li><a href="portfolio-masonry-10-wide.html">Wide</a></li>
+													<li><a href="portfolio-masonry-10-wide-space.html">Wide Space</a></li>
+													<li><a href="portfolio-masonry-10-wide-space-title.html">Wide Space Title</a></li>
+													<li><a href="portfolio-masonry-10-wide-space-detail.html">Wide Details</a></li>
+		                                        </ul>
+											</li>
+	                                    </ul>
+	                                </li>
+				                    <li class="dropdown">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pricing</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="page-pricing.html">Pricing One</a></li>
+											<li><a href="page-pricing2.html">Pricing Two</a></li>
+				                        </ul>
+				                    </li>
+				                    <li class="dropdown">
+				                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+				                        <ul class="dropdown-menu">
+											<li><a href="page-shop.html">Our Shop</a></li>
+											<li><a href="page-product-details.html">Product Details</a></li>
+											<li><a href="page-shoping-cart.html">Shopping Cart</a></li>
+											<li><a href="page-shoping-checkout.html">Shopping Checkout</a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account</a>
+												<ul class="dropdown-menu">
+													<li><a href="page-shop-account.html">My Dashboard </a></li>
+													<li><a href="page-shop-order.html">My Order </a></li>
+													<li><a href="page-shop-acc-info.html">Account Information </a></li>
+													<li><a href="page-shop-address.html">Shopping Address </a></li>
+												</ul>
+											</li>
+				                        </ul>
+				                    </li>
+									<li><a href="page-sitemap.html">Sitemap</a></li>
+									<li><a href="shortcode.html">Shortcode</a></li>
+									<li><a href="shortcode-buttons.html">3D Buttons</a></li>
+									<li><a href="ulockd-icon-box.html">Icon Box</a></li>
+									<li><a href="page-under-construction.html">Under Construction</a></li>
+			                    </ul>
+		                    </li>
+		                    <li class="dropdown megamenu-fw">
+		                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Megamenu</a>
+		                        <ul class="dropdown-menu megamenu-content" role="menu">
+		                            <li>
+		                                <div class="row">
+		                                    <div class="col-menu col-md-3">
+		                                        <h4 class="title">Blog Classic/Single</h4>
+		                                        <div class="content">
+		                                            <ul class="menu-col">
+		                                                <li><a href="blog-signle-left-sidebar.html">Blog Single Sidebar left</a></li>
+		                                                <li><a href="blog-left-sidebar.html">Blog Sidebar left</a></li>
+		                                                <li><a href="blog-right-sidebar.html">Blog Sidebar Right</a></li>
+		                                                <li><a href="blog-sidebar-less.html">Blog Sidebar Less</a></li>
+		                                            </ul>
+		                                        </div>
+		                                    </div><!-- end col-3 -->
+		                                    <div class="col-menu col-md-3">
+		                                        <h4 class="title">Shop Page</h4>
+		                                        <div class="content">
+		                                            <ul class="menu-col">
+		                                                <li><a href="page-shop.html">Our Shop</a></li>
+		                                                <li><a href="page-product-details.html">Product Details</a></li>
+		                                                <li><a href="page-shoping-cart.html">Shopping Cart</a></li>
+		                                                <li><a href="page-shoping-checkout.html">Shopping Checkout</a></li>
+		                                            </ul>
+		                                        </div>
+		                                    </div><!-- end col-3 -->
+		                                    <div class="col-menu col-md-3">
+		                                        <h4 class="title">Our Gallery</h4>
+	                                            <ul class="menu-col">
+	                                                <li><a href="portfolio-masonry-4.html" target="_blank">Gallery One</a></li>
+	                                                <li><a href="portfolio-masonry-4-wide.html" target="_blank">Gallery Two</a></li>
+	                                                <li><a href="page-gallery-fancybox.html" target="_blank">Gallery Three</a></li>
+													<li><a href="shortcode-buttons.html">3D Buttons</a></li>
+													<li><a href="ulockd-icon-box.html">Icon Box</a></li>
+	                                            </ul>
+		                                    </div>
+		                                    <div class="col-menu col-md-3">
+		                                        <h4 class="title">Video Demo</h4>
+		                                        <div class="content">
+		                                            <ul class="menu-col">
+		                                                <li>
+															<div class="ulockd-project-sm-thumb">
+																<iframe src="https://player.vimeo.com/video/176916362?title=0&amp;byline=0&amp;portrait=0&amp;color=f2f2ea" allowfullscreen></iframe>
+															</div>
+		                                                </li>
+		                                            </ul>
+		                                        </div>
+		                                    </div><!-- end col-3 -->
+		                                </div><!-- end row -->
+		                            </li>
+				                </ul>
+		                    </li>
 		                </ul>
 		            </div><!-- /.navbar-collapse -->
 		        </div>   
@@ -90,7 +481,7 @@
 	</header>
 
 	<!-- Home Design -->
-	<div id="home" class="ulockd-home-slider snow_fall">
+	<div class="ulockd-home-slider snow_fall">
 		<div class="container-fluid">
 			<div class="row">
 				<div id="sg-carousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -132,7 +523,7 @@
 	</div>
 
 	<!-- Our About -->
-	<section id="about" class="ulockd-about bgc-overlay-white8 ulockd_bgp3">
+	<section class="ulockd-about bgc-overlay-white8 ulockd_bgp3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center">
@@ -233,7 +624,7 @@
 	</section>
 
 	<!-- Our Story -->
-	<section id="story" class="ulockd-about bgc-overlay-white9 ulockd_bgp3">
+	<section class="ulockd-about bgc-overlay-white9 ulockd_bgp3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center">
@@ -469,7 +860,7 @@
 	</section>
 
 	<!-- Our Event -->
-	<section id="event" class="events bgc-overlay-white7 ulockd_bgp3">
+	<section class="events bgc-overlay-white7 ulockd_bgp3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center">
@@ -656,7 +1047,7 @@
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<div class="video-button text-center">
-						<a class="mfp-iframe mfp-youtube color-white fz60" href="https://www.youtube.com/watch?time_continue=18&amp;v=teLhLLlhfzc" title="About Our Company"><span class="flaticon-play-button"></span></a>
+						<a class="mfp-iframe mfp-youtube color-white fz60" href="https://www.youtube.com/watch?time_continue=18&v=teLhLLlhfzc" title="About Our Company"><span class="flaticon-play-button"></span></a>
 					</div>
 				</div>
 			</div>
@@ -664,7 +1055,7 @@
 	</section>
 	
 	<!-- Our BridesMaids -->
-	<section id="ourmaid" class="our-team bgc-overlay-white8 ulockd_bgp3">
+	<section class="our-team bgc-overlay-white8 ulockd_bgp3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center">
@@ -946,7 +1337,7 @@
 	</section>
 
 	<!-- Our Blog -->
-	<section id="blog" class="ulockd-blog bgc-overlay-white8 ulockd_bgp3">
+	<section class="ulockd-blog bgc-overlay-white8 ulockd_bgp3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center">
@@ -994,84 +1385,6 @@
 							<h3 class="post-title tdu-hvr">Tue 15 May 2018</h3>
 							<p>Uorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis nostrum hic quae ab nihil fuga? Maiores.</p>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Our Contact -->
-	<section id="contact" class="ulockd-contact">		
-		<div class="container-fluid ulockd-padz">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center">
-					<div class="ulockd-main-title">
-						<h2><span class="text-thm2">Our Contact</span></h2>
-						<img src="images/resource/title-bottom.png" alt="title-bottom.png">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="ulockd-google-map">
-		                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.2543150778074!2d23.710822715553515!3d37.97119390860681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bce23216bc8b%3A0xfad295e22d902ed!2zzqTOsc6yzq3Pgc69zrEgzpTOuc6_zrzOsc-EzqzPgc63z4I!5e0!3m2!1sen!2sgr!4v1464458530549" width="600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row ulockd-mrgn12-150 dib">
-				<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-5 ulockd-bgthm">
-					<div class="contact-info ulockd-mrgn1225">
-						<ul class="list-unstyled">
-							<li><span class="flaticon-black-back-closed-envelope-shape" title="CHeart@email.com"> <small>CHeart@email.com </small></span></li>
-							<li><span class="flaticon-old-handphone" title="99 55 66 88 526"> <small> +99 55 66 88 526 </small></span></li>
-							<li><span class="flaticon-map-marker" title="Victoria 8007 Australia Envato HQ 121 King Street, Melbourne"> <small>Victoria 8007 Australia Envato  </small></span></li>
-							<li><span class="flaticon-checkbox-pen-outline" title="Written Your Message"> <small>Left Some Word </small></span></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-xxs-12 col-xs-6 col-sm-6 col-md-7 bgc-white">
-					<div class="ulockd-contact-form ulockd-mrgn1225">
-                        <form id="contact_form" name="contact_form" class="contact-form" action="#" method="post" novalidate="novalidate">
-                            <div class="messages"></div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input id="form_name" name="form_name" class="form-control ulockd-form-fg required" placeholder="Your name" required="required" data-error="Name is required." type="text">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input id="form_email" name="form_email" class="form-control ulockd-form-fg required email" placeholder="Your email" required="required" data-error="Email is required." type="email">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-	                            <div class="col-md-6">
-	                                <div class="form-group">
-	                                    <input id="form_phone" name="form_phone" class="form-control ulockd-form-fg required" placeholder="Phone" required="required" data-error="Phone Number is required." type="text">
-	                                    <div class="help-block with-errors"></div>
-	                                </div>
-	                            </div>
-	                            <div class="col-md-6">
-	                                <div class="form-group">
-	                                    <input id="form_subject" name="form_subject" class="form-control ulockd-form-fg required" placeholder="Subject" required="required" data-error="Subject is required." type="text">
-	                                    <div class="help-block with-errors"></div>
-	                                </div>
-	                            </div>
-                                <div class="col-md-12">
-		                            <div class="form-group">
-		                                <textarea id="form_message" name="form_message" class="form-control ulockd-form-tb required" rows="8" placeholder="Your massage" required="required" data-error="Message is required."></textarea>
-		                                <div class="help-block with-errors"></div>
-		                            </div>
-		                            <div class="form-group ulockd-contact-btn">
-		                                <input id="form_botcheck" name="form_botcheck" class="form-control" value="" type="hidden">
-		                                <button type="submit" class="btn btn-default ulockd-btn-thm2" data-loading-text="Getting Few Sec...">SUBMIT</button>
-		                            </div>
-                                </div> 
-                            </div>
-                        </form>
 					</div>
 				</div>
 			</div>
@@ -1173,7 +1486,6 @@
 <!-- Custom script for all pages --> 
 <script type="text/javascript" src="js/color-switcher.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
 <script>
 // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
 new Photostack( document.getElementById( 'photostack-3' ), {
@@ -1214,6 +1526,4 @@ new Photostack( document.getElementById( 'photostack-3' ), {
     /* More_Style_Name_Here_Is_commented_By_Class=clear,=round,=shadows,=roundshadows,=imagebut /*image : "images/resource/flake.png",*/
 </script>
 </body>
-
-<!-- Mirrored from unlockdesizn.com/html/wedding/couple-heart/demo/index-singlepage.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Dec 2017 17:39:14 GMT -->
 </html>
